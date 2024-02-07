@@ -177,17 +177,26 @@ section.container_products {
 section.container_products h2 {
   text-align: center;
   font-size: 2em;
+  color: var(--secondary_color);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 section.container_products .products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 3em 3em;
-  padding-bottom: 2.3em;
-  gap: 2em;
+  display: flex;
+  gap: 3em; 
+  flex-direction: column;
+  margin: 1em;
 }
 
-section.container_products .products .product {
+section.container_products .products .categorie { 
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+}
+
+section.container_products .products .categorie .product {
   height: 300px;
   display: flex;
   flex-direction: column;
